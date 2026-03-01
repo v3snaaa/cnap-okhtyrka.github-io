@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ЦНАП Охтирка</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <h1 class="logo">ЦНАП Охтирка</h1>
+        <nav class="nav">
+            <a href="#home">Головна</a>
+            <a href="#services">Послуги</a>
+            <a href="#appointment">Онлайн-запис</a>
+            <a href="#contacts">Контакти</a>
+        </nav>
+    </div>
+</header>
+
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h2>Центр надання адміністративних послуг</h2>
+        <p>Швидко. Зручно. Прозоро.</p>
+        <a href="#appointment" class="btn">Записатися онлайн</a>
+    </div>
+</section>
+
+<section id="services" class="services container">
+    <h2 class="section-title">Наші послуги</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Паспортні послуги</h3>
+            <p>Оформлення ID-картки та закордонного паспорта.</p>
+        </div>
+        <div class="card">
+            <h3>Реєстрація місця проживання</h3>
+            <p>Прописка та зміна місця проживання.</p>
+        </div>
+        <div class="card">
+            <h3>Реєстрація бізнесу</h3>
+            <p>Відкриття ФОП та юридичних осіб.</p>
+        </div>
+    </div>
+</section>
+
+<section id="appointment" class="appointment">
+    <div class="container">
+        <h2 class="section-title">Онлайн-запис</h2>
+        <form class="form">
+            <input type="text" placeholder="Ваше ім’я" required>
+            <input type="tel" placeholder="Номер телефону" required>
+            <select required>
+                <option value="">Оберіть послугу</option>
+                <option>Паспорт</option>
+                <option>Прописка</option>
+                <option>Реєстрація бізнесу</option>
+            </select>
+            <input type="date" required>
+            <button type="submit" class="btn">Відправити заявку</button>
+        </form>
+    </div>
+</section>
+
+<section id="contacts" class="contacts container">
+    <h2 class="section-title">Контакти</h2>
+    <p>📍 м. Охтирка, вул. Незалежності, 21</p>
+    <p>📞 +380 000000000</p>
+    <p>📧 cnap@smr.gov.ua</p>
+</section>
+
+<footer class="footer">
+    <p>© 2026 ЦНАП Охтирка</p>
+</footer>
+
+<script>
+document.querySelector(".form").addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Ваша заявка успішно відправлена!");
+});
+</script>
+
+</body>
+</html>
